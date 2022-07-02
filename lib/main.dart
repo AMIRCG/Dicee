@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'DiceePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,26 +19,6 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const DicePage(),
-    );
-  }
-}
-
-class DicePage extends StatefulWidget {
-  const DicePage({Key? key}) : super(key: key);
-
-  @override
-  State<DicePage> createState() => _DicePageState();
-}
-
-class _DicePageState extends State<DicePage> {
-  @override
-  Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    return Scaffold(
-      body: SizedBox(
-        height: size.height,
-        width: size.width,
-      ),
     );
   }
 }
